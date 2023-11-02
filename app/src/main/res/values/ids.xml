@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="order_summary_horizontal_layout" type="id" />
+    <item name="payment_method_label" type="id" />
+    <item name="payment_method" type="id" />
+    <item name="actual_pay_label" type="id" />
+    <item name="actual_pay" type="id" />
+    <item name="editTextTime" type="id" />
+    <item name="editTextDate" type="id" />
+</resources>

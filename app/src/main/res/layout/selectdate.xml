@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="0dp">
+    <include layout="@layout/toolbar"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_marginTop="60dp"
+        >
+
+        <View
+            android:id="@+id/image_1631"
+            android:layout_width="match_parent"
+            android:layout_height="410dp"
+            android:background="@drawable/image_the_creater_03" />
+
+
+        <View
+            android:id="@+id/rectangle_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/rectangle_select_date_01" />
+
+        <TextView
+            android:id="@+id/select_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="391dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/select_date" />
+    </RelativeLayout>
+</RelativeLayout>

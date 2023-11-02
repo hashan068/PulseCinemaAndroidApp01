@@ -1,0 +1,74 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">PulseCinemaAndroidApp</string>
+    <string name="ticketDate">Date</string>
+    <string name="seats">Seats</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="movieName">xxxxxxxxxxxxxxxxxxxxxx</string>
+    <string name="pulse_cinema">Pulse Cinema</string>
+    <string name="select_date">Select Date</string>
+    <string name="some_id" />
+    <string name="action_adventure">Action, Adventure</string>
+    <string name="release_date_october_31_2023">Release Date: October 31, 2023</string>
+    <string name="movie_title">Movie Title</string>
+    <string name="the_creater">The Creater</string>
+
+
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="register_now">Register Now</string>
+    <string name="already_have_an_account_sign_in">Already have an account? Sign In</string>
+    <string name="enter_your_email_address">Enter your email address</string>
+    <string name="new_username">New Username</string>
+    <string name="register">Register</string>
+
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account? Sign Up</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_main">MainActivity</string>
+
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+
+    <!-- Strings used for payment layout -->
+    <string name="choose_a_payment_method">Choose a payment method</string>
+    <string name="recent_payment_method">Recent payment method</string>
+    <string name="payment">Payment</string>
+    <string name="pin_four_dots">....</string>
+    <string name="card_no">3490xxxxxx268</string>
+    <string name="pin_three_dots" tools:ignore="TypographyEllipsis">...</string>
+    <string name="card_no_two">089xxxxxx212</string>
+    <string name="add_payment_method">Add payment method</string>
+    <string name="pay_via_debit_credit_card">Pay via Debit/ Credit Card</string>
+    <string name="payment_12_00_a_m">12:00 a.m.</string>
+    <string name="payment_monday_15_nov_2023">Monday, 15 Nov 2023</string>
+    <string name="payment_xxi_ambaruko_nplaza_nstudio_1">XXI Ambaruko\nPlaza,\nStudio 1</string>
+
+
+    <!-- Strings used for congratulations -->
+    <string name="congratulations">Congratulations !</string>
+    <string name="your_tickets_are_booked">Your tickets are booked</string>
+    <string name="view_ticket">View Ticket</string>
+    <string name="image_of_a_tick">image of a tick</string>
+
+
+</resources>

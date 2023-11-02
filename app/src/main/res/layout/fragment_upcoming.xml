@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.my_tickets.UpcomingFragment">
+
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Image -->
+            <ImageView
+                android:id="@+id/imageViewMovie"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image_the_creater_02"/>
+
+            <!-- Movie Details -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Movie Title -->
+                <TextView
+                    android:id="@+id/textViewTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Movie Title"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <!-- Movie Genre -->
+                <TextView
+                    android:id="@+id/textViewGenre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Action, Adventure"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/darker_gray"/>
+
+                <!-- Movie Release Date -->
+                <TextView
+                    android:id="@+id/textViewReleaseDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Release Date: October 31, 2023"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/darker_gray"/>
+            </LinearLayout>
+
+            <!-- View Ticket Button -->
+            <Button
+                android:id="@+id/buttonViewTicket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View Ticket"
+                android:layout_margin="16dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

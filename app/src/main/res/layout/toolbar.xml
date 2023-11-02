@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#2a3757">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="16dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/left_icon"
+            android:layout_centerVertical="true"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:contentDescription="Back" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/left_icon"
+            android:layout_centerVertical="true"
+            android:text="@string/pulse_cinema"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20sp"
+            android:textSize="18dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="TODO" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/right_icon"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/menu"
+            android:contentDescription="TODO" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
