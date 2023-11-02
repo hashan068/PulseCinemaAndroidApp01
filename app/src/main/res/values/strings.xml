@@ -69,6 +69,10 @@
     <string name="your_tickets_are_booked">Your tickets are booked</string>
     <string name="view_ticket">View Ticket</string>
     <string name="image_of_a_tick">image of a tick</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 
 
 </resources>
