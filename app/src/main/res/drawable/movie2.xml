@@ -2,13 +2,7 @@
 <!-- res/drawable/movie_selector.xml -->
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- Pressed state -->
-    <item android:drawable="@drawable/movie_pressed" android:state_pressed="true" />
-
-    <!-- Focused state -->
-    <item android:drawable="@drawable/movie_focused" android:state_focused="true" />
-
     <!-- Default state -->
-    <item android:drawable="@drawable/movie_default" />
+    <item android:drawable="@drawable/image_the_creater_03" />
 
 </selector>
