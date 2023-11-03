@@ -30,6 +30,7 @@ public class ProfileFragment extends Fragment {
         return root;
     }
 
+    // Called when the fragment is no longer in use
     @Override
     public void onDestroyView() {
         super.onDestroyView();

@@ -17,7 +17,7 @@
             android:exported="false"
             android:label="@string/title_activity_main2" />
         <activity
-            android:name=".ui.movies.MovieActivity"
+            android:name=".ui.movies.MovieFragment"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

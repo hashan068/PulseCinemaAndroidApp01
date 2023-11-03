@@ -17,3 +17,4 @@ public class ProfileViewModel extends ViewModel {
         return mText;
     }
 }
+
