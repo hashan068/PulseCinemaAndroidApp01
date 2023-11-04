@@ -9,6 +9,7 @@ import android.widget.Button;
 // allowing to use Toast to display messages in your Android application
 import android.widget.Toast;
 
+import com.example.pulsecinemaandroidapp.Models.Movie;
 import com.example.pulsecinemaandroidapp.R;
 import com.example.pulsecinemaandroidapp.ui.movies.MovieFragment;
 
@@ -63,10 +64,10 @@ public class LoginActivity extends AppCompatActivity {
     private void moveToNextActivity() {
         // Create an Intent to start the next activity
         // Replace NextActivity.class with the actual class of your next activity
-           Intent intent = new Intent(LoginActivity.this, MovieFragment.class);
+           Intent intent = new Intent(LoginActivity.this, com.example.pulsecinemaandroidapp.MainActivity.class);
             startActivity(intent);
 
-        // For testing purposes, you can finish the current activity
+        // For testing purposes, we can finish the current activity
         // finish();
     }
 }
