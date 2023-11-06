@@ -8,9 +8,6 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.pulsecinemaandroidapp.R;
-import com.example.pulsecinemaandroidapp.SelectDateActivity;
-
 public class MovieDetailsActivity extends AppCompatActivity {
 
     @Override
@@ -20,23 +17,27 @@ public class MovieDetailsActivity extends AppCompatActivity {
 
         // Back Button
         ImageView backButton = findViewById(R.id.left_icon);
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish(); // Close the current activity and go back to the previous one
-            }
-        });
+        if (backButton != null) {
+            backButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    finish(); // Close the current activity and go back to the previous one
+                }
+            });
+        }
 
         // Buy Ticket Button
         Button buyTicketButton = findViewById(R.id.buttonBuyTicket);
-        buyTicketButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // Handle buy ticket button click
-                // For example, you can open a new activity for ticket booking
-                Intent intent = new Intent(MovieDetailsActivity.this, SelectDateActivity.class);
-                startActivity(intent);
-            }
-        });
+        if (buyTicketButton != null) {
+            buyTicketButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    // Handle buy ticket button click
+                    // For example, you can open a new activity for ticket booking
+                    Intent intent = new Intent(MovieDetailsActivity.this, SelectDateActivity.class);
+                    startActivity(intent);
+                }
+            });
+        }
     }
 }

@@ -1,0 +1,8 @@
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/seatButton"
+    android:layout_width="90dp"
+    android:layout_height="90dp"
+    android:background="@drawable/seat_selector"
+    android:textColor="@android:color/white"
+    android:textSize="18sp"
+    android:padding="8dp"/>

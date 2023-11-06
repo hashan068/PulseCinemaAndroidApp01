@@ -1,18 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginTop="0dp">
+    <!-- Toolbar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#2a3757">
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/left_icon02"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20sp"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:contentDescription="Back" />
 
-
-
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/left_icon02"
+            android:layout_centerVertical="true"
+            android:text="@string/movie_date"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20sp"
+            android:textSize="18dp"/>
+    </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="420dp"
+        android:layout_height="match_parent"
         android:layout_marginTop="60dp"
         >
 
@@ -26,7 +48,7 @@
         <View
             android:id="@+id/rectangle_1"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="410dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:background="@drawable/rectangle_select_date_01" />
@@ -39,5 +61,48 @@
             android:layout_marginTop="391dp"
             android:gravity="center_horizontal|center_vertical"
             android:text="@string/select_date" />
+
+        <Button
+            android:id="@+id/date1"
+            android:layout_width="81dp"
+            android:layout_height="126dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="490dp"
+            android:textSize="18dp"
+            android:text="21 SEP"
+            app:cornerRadius="10dp" />
+
+        <Button
+            android:id="@+id/date2"
+            android:layout_width="81dp"
+            android:layout_height="126dp"
+            android:layout_marginLeft="121dp"
+            android:layout_marginTop="490dp"
+            android:textSize="18dp"
+            android:text="22 SEP"
+            app:cornerRadius="10dp" />
+
+        <Button
+            android:id="@+id/date3"
+            android:layout_width="81dp"
+            android:layout_height="126dp"
+            android:layout_marginLeft="221dp"
+            android:layout_marginTop="490dp"
+            android:textSize="18dp"
+            android:text="23 SEP"
+            app:cornerRadius="10dp" />
+
+        <Button
+            android:id="@+id/date4"
+            android:layout_width="81dp"
+            android:layout_height="126dp"
+            android:layout_marginLeft="321dp"
+            android:layout_marginTop="490dp"
+            android:textSize="18dp"
+            android:text="24 SEP"
+            app:cornerRadius="10dp" />
+
     </RelativeLayout>
+
+
 </RelativeLayout>

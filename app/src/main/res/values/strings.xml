@@ -69,6 +69,7 @@
     <string name="view_ticket">View Ticket</string>
     <string name="image_of_a_tick">image of a tick</string>
     <string name="movie_details">Movie Details</string>
+    <string name="movie_date">Select Date</string>
 
 
 </resources>
