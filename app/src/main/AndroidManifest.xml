@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PulseCinemaAndroidApp"
         tools:targetApi="31">
+
         <activity
             android:name=".SelectSeatActivity"
             android:exported="false" />
