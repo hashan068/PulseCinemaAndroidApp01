@@ -62,7 +62,7 @@
                 android:id="@+id/textViewTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="The Creater"
+                android:text="The Creator"
                 android:textSize="20sp"
                 android:textStyle="bold"/>
 
