@@ -6,33 +6,15 @@
     android:layout_height="match_parent"
     android:layout_gravity="center"
     android:orientation="vertical"
-    android:background="@color/main_color">
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="#2a3757">
+    android:padding="20dp">
 
- />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:text="@string/select_date"
-            android:textColor="@color/white"
-            android:layout_centerInParent="true"
-            android:layout_marginLeft="60sp"
-            android:textSize="22sp"/>
-
-    </RelativeLayout>
     <androidx.cardview.widget.CardView
         android:id="@+id/ticket"
         android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_height="572dp"
+        android:layout_marginStart="34dp"
         android:layout_marginTop="60dp"
         android:layout_marginBottom="150dp"
-        ceterInParent="true"
         tools:ignore="ExtraText,VisualLintBounds,TextSizeCheck">
 
         <LinearLayout
