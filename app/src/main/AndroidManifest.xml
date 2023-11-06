@@ -13,6 +13,18 @@
         android:theme="@style/Theme.PulseCinemaAndroidApp"
         tools:targetApi="31">
         <activity
+            android:name=".SelectSeatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SelectShowTimeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SelectDateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MovieDetailsActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.movies.MovieActivity"
             android:exported="false" />
         <activity
