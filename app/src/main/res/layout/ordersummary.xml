@@ -4,9 +4,8 @@
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
-
+    android:orientation="vertical">
+    <!--IM/2020/031-Navindaya-->
     <TextView
         android:id="@+id/order_summary_text"
         android:layout_width="match_parent"

@@ -13,7 +13,7 @@ import android.widget.Toast;
 import com.example.pulsecinemaandroidapp.R;
 import com.example.pulsecinemaandroidapp.ui.movies.MovieActivity;
 
-
+// IM/2020/031-Navindaya
 public class LoginActivity extends AppCompatActivity {
 
     private com.google.android.material.textfield.TextInputEditText editTextUsername, editTextPassword;

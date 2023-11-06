@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import com.example.pulsecinemaandroidapp.R;
 
 public class ComingSoonFragment extends Fragment {
-
+// IM/2020/014 - Senanayeka
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

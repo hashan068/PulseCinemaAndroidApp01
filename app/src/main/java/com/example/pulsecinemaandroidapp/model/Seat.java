@@ -1,6 +1,6 @@
 package com.example.pulsecinemaandroidapp.model;
+// IM/2020/048-Sudeera
 
-// Seat.java
 public class Seat {
     private int seatNumber;
     private boolean isSelected;

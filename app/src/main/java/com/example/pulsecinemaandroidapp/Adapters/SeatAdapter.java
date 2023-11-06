@@ -11,7 +11,7 @@ import com.example.pulsecinemaandroidapp.R;
 import com.example.pulsecinemaandroidapp.model.Seat;
 
 import java.util.List;
-
+// IM/2020/048-Sudeera
 public class SeatAdapter extends BaseAdapter {
 
     private final List<Seat> seatList;

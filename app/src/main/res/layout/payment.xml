@@ -5,9 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
-    tools:context=".Payment">
-
+    android:padding="16dp">
+    <!--IM/2020/031-Navindaya-->
     <TextView
         android:id="@+id/order_summary_text"
         android:layout_width="match_parent"

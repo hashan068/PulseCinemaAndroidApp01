@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="#2a3757">
-
+    <!--IM/2020/068 - Hashan -->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"

@@ -14,7 +14,7 @@ import com.example.pulsecinemaandroidapp.MovieDetailsActivity;
 import com.example.pulsecinemaandroidapp.R;
 
 public class NowPlayingFragment extends Fragment {
-
+    // IM/2020/014 - Senanayeka
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

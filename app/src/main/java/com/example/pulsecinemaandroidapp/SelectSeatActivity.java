@@ -13,6 +13,7 @@ import com.example.pulsecinemaandroidapp.model.Seat;
 import java.util.ArrayList;
 import java.util.List;
 
+// IM/2020/014 - Senanayeka
 public class SelectSeatActivity extends AppCompatActivity {
 
     private GridView gridView;

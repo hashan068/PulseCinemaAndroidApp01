@@ -8,7 +8,7 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import com.example.pulsecinemaandroidapp.ui.movies.ComingSoonFragment;
 import com.example.pulsecinemaandroidapp.ui.movies.NowPlayingFragment;
-
+// IM/2020/068 - Hashan
 public class MyViewPagerAdapter extends FragmentStateAdapter {
 
     public MyViewPagerAdapter(@NonNull FragmentActivity fragmentActivity) {
