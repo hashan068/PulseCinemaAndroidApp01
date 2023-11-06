@@ -1,18 +1,21 @@
 package com.example.pulsecinemaandroidapp.ui.login;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
+
 import com.example.pulsecinemaandroidapp.R;
 import com.example.pulsecinemaandroidapp.ui.movies.MovieActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
     private com.google.android.material.textfield.TextInputEditText editTextUsername, editTextPassword;
-    private Button buttonLogin;
+    private Button buttonLogin, buttonSignUp;
 
     @SuppressLint("WrongViewCast")
     @Override
@@ -24,6 +27,7 @@ public class LoginActivity extends AppCompatActivity {
         editTextUsername = findViewById(R.id.editTextUsername);
         editTextPassword = findViewById(R.id.editTextPassword);
         buttonLogin = findViewById(R.id.buttonLogin);
+        buttonSignUp = findViewById(R.id.signUpButton);
 
         // Set click listener for the login button
         buttonLogin.setOnClickListener(new View.OnClickListener() {
@@ -40,11 +44,20 @@ public class LoginActivity extends AppCompatActivity {
                     moveToNextActivity();
                 } else {
                     // Authentication failed, show a toast or error message
-                    // For example, you can use Toast or Snack bar
-                    // Toast.makeText(LoginActivity.this, "Invalid credentials", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "Invalid credentials", Toast.LENGTH_SHORT).show();
                 }
             }
         });
+
+        // Set click listener for the sign-up button
+        buttonSignUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Handle sign-up button click
+                moveToSignUpActivity();
+            }
+        });
+
     }
 
     // method for authentication logic
@@ -56,10 +69,17 @@ public class LoginActivity extends AppCompatActivity {
     private void moveToNextActivity() {
         // Create an Intent to start the next activity
         // Replace NextActivity.class with the actual class of your next activity
-           Intent intent = new Intent(LoginActivity.this, MovieActivity.class);
-            startActivity(intent);
+        Intent intent = new Intent(LoginActivity.this, MovieActivity.class);
+        startActivity(intent);
 
         // For testing purposes, you can finish the current activity
         // finish();
+    }
+
+    // Method to move to the sign-up activity
+    private void moveToSignUpActivity() {
+        // Create an Intent to start the sign-up activity
+        Intent intent = new Intent(LoginActivity.this, SignUpActivity.class);
+        startActivity(intent);
     }
 }

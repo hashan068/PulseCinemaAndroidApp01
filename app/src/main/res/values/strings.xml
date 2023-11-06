@@ -4,7 +4,6 @@
     <string name="seats">Seats</string>
 
 
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="movieName">xxxxxxxxxxxxxxxxxxxxxx</string>
     <string name="pulse_cinema">Pulse Cinema</string>
@@ -69,6 +68,7 @@
     <string name="your_tickets_are_booked">Your tickets are booked</string>
     <string name="view_ticket">View Ticket</string>
     <string name="image_of_a_tick">image of a tick</string>
+    <string name="movie_details">Movie Details</string>
 
 
 </resources>

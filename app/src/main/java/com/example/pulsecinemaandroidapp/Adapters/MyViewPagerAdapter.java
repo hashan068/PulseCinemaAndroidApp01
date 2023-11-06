@@ -1,6 +1,6 @@
 package com.example.pulsecinemaandroidapp.Adapters;
 // IM/2020/068-HASHAN
-//
+
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
