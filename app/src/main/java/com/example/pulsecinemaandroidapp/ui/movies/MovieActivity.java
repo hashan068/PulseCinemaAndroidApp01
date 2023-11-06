@@ -9,7 +9,7 @@ import com.example.pulsecinemaandroidapp.Adapters.MyViewPagerAdapter;
 import com.example.pulsecinemaandroidapp.R;
 import com.google.android.material.tabs.TabLayout;
 
-public class MovieFragment extends AppCompatActivity {
+public class MovieActivity extends AppCompatActivity {
 
     TabLayout tabLayout;
     ViewPager2 viewPager2;
