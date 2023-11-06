@@ -14,8 +14,8 @@ import java.util.List;
 
 public class SeatAdapter extends BaseAdapter {
 
-    private List<Seat> seatList;
-    private Context context;
+    private final List<Seat> seatList;
+    private final Context context;
 
     public SeatAdapter(Context context, List<Seat> seatList) {
         this.context = context;
@@ -39,26 +39,26 @@ public class SeatAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        SeatViewHolder holder;
+        SeatItemViewHolder holder;
 
         if (convertView == null) {
             LayoutInflater inflater = LayoutInflater.from(context);
             convertView = inflater.inflate(R.layout.item_seat, parent, false);
-            holder = new SeatViewHolder(convertView);
+            holder = new SeatItemViewHolder(convertView);
             convertView.setTag(holder);
         } else {
-            holder = (SeatViewHolder) convertView.getTag();
+            holder = (SeatItemViewHolder) convertView.getTag();
         }
 
-        final Seat seat = seatList.get(position);
+        final Seat currentSeat = seatList.get(position);
 
-        holder.button.setText(String.valueOf(seat.getSeatNumber()));
-        holder.button.setSelected(seat.isSelected());
+        holder.button.setText(String.valueOf(currentSeat.getSeatNumber()));
+        holder.button.setSelected(currentSeat.isSelected());
 
         holder.button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                seat.setSelected(!seat.isSelected());
+                currentSeat.setSelected(!currentSeat.isSelected());
                 notifyDataSetChanged();
             }
         });
@@ -66,10 +66,10 @@ public class SeatAdapter extends BaseAdapter {
         return convertView;
     }
 
-    private static class SeatViewHolder {
+    private static class SeatItemViewHolder {
         Button button;
 
-        SeatViewHolder(View view) {
+        SeatItemViewHolder(View view) {
             button = view.findViewById(R.id.seatButton);
         }
     }
