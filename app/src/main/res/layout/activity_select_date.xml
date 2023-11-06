@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        android:id="@+id/sel_lay_img">
+
+        <View
+            android:id="@+id/image_1631"
+            android:layout_width="match_parent"
+            android:layout_height="410dp"
+            android:background="@drawable/image_the_creater_03" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#2a3757">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/left_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:contentDescription="Back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/left_icon"
+            android:layout_centerVertical="true"
+            android:text="@string/select_date"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20sp"
+            android:textSize="18dp"/>
+
+    </RelativeLayout>
+
+
+            <!-- Adding a LinearLayout to hold the buttons horizontally -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Material Design buttons with border only -->
+                <com.google.android.material.button.MaterialButton
+                    style="@style/BorderOnlyButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button 1" />
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/BorderOnlyButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button 2" />
+
+                <!-- Add more buttons as needed -->
+
+            </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/select_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="391dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/select_date" />
+
+</RelativeLayout>

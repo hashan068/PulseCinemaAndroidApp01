@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Toolbar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#2a3757">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/left_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20sp"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:contentDescription="Back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/left_icon"
+            android:layout_centerVertical="true"
+            android:text="@string/movie_details"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20sp"
+            android:textSize="18dp"/>
+    </RelativeLayout>
+
+    <!-- Movie Details Section -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
+
+        <!-- Movie Image -->
+        <ImageView
+            android:id="@+id/imageViewMovie"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image_the_creater_02"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+
+        <!-- Movie Details -->
+        <LinearLayout
+            android:id="@+id/detailsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/imageViewMovie"
+            android:layout_margin="20dp"
+            android:layout_marginTop="15dp">
+
+            <!-- Movie Title -->
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The Creater"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <!-- Movie Genre -->
+            <TextView
+                android:id="@+id/textViewGenre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Action, Adventure"
+                android:textSize="16sp"
+                android:textColor="@android:color/darker_gray"/>
+
+            <!-- Movie Release Date -->
+            <TextView
+                android:id="@+id/textViewReleaseDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Release Date: November 10, 2023"
+                android:textSize="16sp"
+                android:textColor="@android:color/darker_gray"/>
+        </LinearLayout>
+
+        <!-- Material Design Button for Buy Ticket -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonBuyTicket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buy Ticket"
+            android:textSize="22sp"
+            android:layout_below="@id/detailsLayout"
+            android:layout_margin="20dp"
+            android:layout_marginTop="16dp"
+            app:backgroundTint="#2a3757" />
+    </RelativeLayout>
+
+</RelativeLayout>
